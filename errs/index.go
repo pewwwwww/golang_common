@@ -51,6 +51,11 @@ func Propagate(err error) {
 	}
 }
 
+func Unwrap[T interface{}](val T, err error) T {
+	Propagate(err)
+	return val
+}
+
 const assumption_crash_rationale = "Deliberatly crashing to avoid progressing based on a " +
 	"faulty/dangerous/undefined state, potentially causing even more trouble."
 
