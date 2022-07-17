@@ -1,4 +1,4 @@
-module github.com/pewwwwww/go_common
+module github.com/pewwwwww/golang_common
 
 go 1.18
 
